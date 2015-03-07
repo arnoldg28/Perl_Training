@@ -1,0 +1,40 @@
+#### Hashes - Associative Arrays ####
+- unordered list denoted by '%'
+- the scalar elements are denoted by and associated key value
+- %hash = ("key1","value1","key2","value2");
+or
+- %hash = ("key1"=>"value1","key2"=>"value2");
+-the memory allocation is random
+
+- To access a scalar value use:
+	$hash{"key"}
+
+- all the even indexed element are keys
+- all odd indexed elements are the values of the keys
+
+Rules:
+- the keys in an hash are ALWAYS a string
+- the keys should always be unique
+- There should no be an undefined key in a hash
+
+#### Keys Function ####
+- keys function returns the LIST of keys from hash
+- In a scalar context, the NUMBER of keys is returned
+
+#### Values Function ####
+- values function returns the LIST of values from the hash
+
+#### Each Function ####
+- each function return both key and a value from a hash
+
+#### Exist Function ####
+- This function test if the key value exist in the hash *need some example
+
+### Delete function ####
+- delete function is used to delete a value from a hash or an array
+- hash: delete $hash{"key"};
+- array: delete $array[1];
+
+#### Conversion from hash to an array ####
+- array to hash is done by assigning a hash to an array
+

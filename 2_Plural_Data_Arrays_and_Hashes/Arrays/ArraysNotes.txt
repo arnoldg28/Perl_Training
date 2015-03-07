@@ -1,0 +1,60 @@
+#### Arrays - The Plural Data ####
+- Arrays are denoted by '@' symbol
+- Array is an ordered list of scalar data
+- Accessed by giving the position of the scalar within a []
+- An array can contain numbers, characters, strings or mixture of both
+
+#### Arrays - List and Scalar context ####
+- Anything within a () is a list
+- @array = ('1','2') is same as @array = qw (1 2)
+- index value of an array starts with 0
+- arrays can be negative indexed
+
+#### Array Slices ####
+- We can work on part of an array called array slices
+
+#### Sort Function ####
+- takes an array as parameter and return a sorted array
+- original array will not be affected
+- uses cmp internally
+
+#### Reverse Function ####
+- Returns a reverse array
+- @rev_array = reverse @array
+- does not affect original array
+
+#### Push Function #### //reverse of Unshift
+- Insert a list into an array from highest indexed position (in the end)
+- push @array, "word1", "word2";
+-affects the array
+-return the length
+
+#### Pop Function #### //reverse of shift
+- used to remove the last element from the array
+- pop @array
+- return the removed element
+
+#### Unshift Function ####
+- adds list in the beginning of an array
+- affect the array
+- return the length
+- unshift @array, "word1", "word2";
+
+#### Shift function ####
+- used to removed the first element in an array
+- shift @array
+- return the removed element
+
+#### Splice Function ####
+- Splice is use to add, removed any number of elements from anywhere in the array
+- splice(arrayName, offset, no.OfElementsToBeRemoved,ListToBeAdded)
+
+#### Foreach Function ####
+- foreach keyword returns each element from the array
+foreach $var (@array){
+	print $var;
+}
+
+#### Array interpolation ####
+- when and array is put into double quotes interpolation takes place
+- print @array is different from print "@array"
