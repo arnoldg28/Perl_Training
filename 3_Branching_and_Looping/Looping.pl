@@ -101,3 +101,30 @@ print "#### REDO #### \n";
 
 print "\n\n";
 
+# Next - go to the next iteration
+print "#### Next #### \n";
+@list = (1,2,3,4,5,5,3,6,7,1 );
+
+foreach $key ( @list ){
+   if( $key == 5 ){
+	next;
+   }else{
+	print "Key value is $key\n";
+   }
+}
+
+
+print "\n\n";
+
+# Goto - is a statement which jumps to the control where the label is specified
+$count = 0;
+
+START:
+$count = $count + 1;
+
+if( $count > 4 ){
+        print "Exiting program\n";
+}else{
+    print "Count = $count, Jumping to START:\n";
+    goto START;
+}
