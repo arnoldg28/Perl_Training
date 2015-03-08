@@ -1,0 +1,21 @@
+##### Subroutine
+- sub keyword is used to define a subroutine block
+- call by using subroutine name
+- Function call is made bu using the subroutine name
+- arguments can be sent
+- Can return value/s
+- @_ <- special array unique to every subr. This contain the arguments
+- arguments are sent by reference, meaning changes are reflected back to the original variable
+
+##### Local Variable ##### 
+
+- 'local' <- keyword used to localized variable
+- changes are not reflected back to the original variable
+- extends visibility to the subroutines called from that subroutine
+- Local variables are another way to define a lexical scope
+
+##### Prototyping #####
+- inducing certain constraints
+- taken into account at compile time
+- sub foo(\@@) <- args are array at first and list at the 2nd
+

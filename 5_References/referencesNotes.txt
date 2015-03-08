@@ -1,0 +1,7 @@
+References:
+- References are scalars that hold an address to other variable
+- \ is the character that returns the address of the variable
+- $x=20; $x_ref = \$x; <- $x_ref has the address of $x
+- To get the value in that address we need to 'deference' it
+- $$x_ref gives 20
+

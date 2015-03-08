@@ -1,7 +1,0 @@
-- sub keyword is used to define a subroutine block
-- call by using subroutine name'[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D's[D[D'subroutine name'
-- arguments can be sent
--
-[A[C[Ccan return a value/s
-- @_ <- special array unique to every subr. This contain the arguments
-- arguments are sent bu reference, meaning changes are reflected back to the original variable
