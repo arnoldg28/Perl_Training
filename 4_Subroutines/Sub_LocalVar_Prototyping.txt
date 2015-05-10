@@ -1,4 +1,5 @@
-##### Subroutine
+##### Subroutine #####
+
 - sub keyword is used to define a subroutine block
 - call by using subroutine name
 - Function call is made bu using the subroutine name
@@ -6,6 +7,25 @@
 - Can return value/s
 - @_ <- special array unique to every subr. This contain the arguments
 - arguments are sent by reference, meaning changes are reflected back to the original variable
+
+Passing Lists to Subroutines:
+If you pass an array along with scalars in a subroutine it will put the scalars in a single array argument with the array pass as an argument.
+
+Passing Hashes to subroutines:
+When you supply a hash to a subroutine or operator that accepts a list, then hash is automatically translated into a list of key/value pairs.
+Note that there is no definite order of the key/value pairs in the list.
+
+Returning Value from a Subroutine:
+- You can return value
+- If you do not return a value. The last calculation will automatically be returned (WOW)
+
+#### Private Variables in a Subroutine (my) ####
+- All variable in Perl are global by default
+- private variables also called lexical variables created using keyword 'my'
+"Always use my never use Local" hahaha!
+
+#### Temporary Values via local() ####
+- local is mostly used when the current value of a variable must be visible to called subroutines. A local just gives temporary values to global (meaning package) variables.
 
 ##### Local Variable ##### 
 

@@ -16,7 +16,7 @@ sub getShuffledWord{
 
 sub process{
 	# Opening a file of list of words. The shuffled word will come from one of the word inside this file.
-	my $filename = "WordList.txt";
+	my $filename = './wordsEn.txt';
 	open(my $fh, '<:encoding(UTF-8)', $filename)
 	or die "Could not open file '$filename' $!";
 
